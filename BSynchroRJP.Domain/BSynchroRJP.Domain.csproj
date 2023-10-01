@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="JetBrains.Annotations" Version="2023.2.0" />
+    <ProjectReference Include="..\BSynchroRJP.Domain.Shared\BSynchroRJP.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
