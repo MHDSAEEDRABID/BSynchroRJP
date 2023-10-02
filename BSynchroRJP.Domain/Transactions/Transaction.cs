@@ -1,6 +1,5 @@
 ﻿using BSynchroRJP.Domain.Accounts;
 using BSynchroRJP.Domain.Base;
-using BSynchroRJP.Domain.Shared.Transactions.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;

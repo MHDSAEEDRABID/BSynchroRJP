@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BSynchroRJP.Application.Contracts\BSynchroRJP.Application.Contracts.csproj" />
+    <ProjectReference Include="..\BSynchroRJP.Application\BSynchroRJP.Application.csproj" />
     <ProjectReference Include="..\BSynchroRJP.Infrastructure\BSynchroRJP.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
