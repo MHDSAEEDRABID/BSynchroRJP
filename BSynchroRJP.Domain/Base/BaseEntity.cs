@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace BSynchroRJP.Domain.Base
 {
@@ -21,6 +17,7 @@ namespace BSynchroRJP.Domain.Base
 
     public class BaseEntity 
     {
+        [ConcurrencyCheck]
         public virtual string ConcurrencyStamp { get; private set; } = Guid.NewGuid().ToString();
     }
 }

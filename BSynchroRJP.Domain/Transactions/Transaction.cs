@@ -21,7 +21,7 @@ namespace BSynchroRJP.Domain.Transactions
 
         public virtual Account Account { get; private set; }
 
-
+        protected Transaction() { }
         private Transaction(Guid id, DateTime transactionDate , decimal ammount , Guid accountId, Account account = null) : base(id) 
         {
             this.TransactionDate = transactionDate;

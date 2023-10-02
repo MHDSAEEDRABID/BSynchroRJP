@@ -8,7 +8,6 @@
 
   <ItemGroup>
 	<PackageReference Include="JetBrains.Annotations" Version="2023.2.0" />
-    <ProjectReference Include="..\BSynchroRJP.Domain.Shared\BSynchroRJP.Domain.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchroRJP.Application", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchroRJP.Application.Contracts", "BSynchroRJP.Application.Contracts\BSynchroRJP.Application.Contracts.csproj", "{E9D22551-FC28-4672-9D1D-8ADDCB0EE953}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchroRJP.Infrastructure", "BSynchroRJP.Infrastructure\BSynchroRJP.Infrastructure.csproj", "{B0C42682-692C-4E81-8B6D-7ACDE8C69E06}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchroRJP.Domain.Shared", "BSynchroRJP.Domain.Shared\BSynchroRJP.Domain.Shared.csproj", "{52163047-EC8B-4BAA-8061-9477C5FA3332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchroRJP.Infrastructure", "BSynchroRJP.Infrastructure\BSynchroRJP.Infrastructure.csproj", "{B0C42682-692C-4E81-8B6D-7ACDE8C69E06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{B0C42682-692C-4E81-8B6D-7ACDE8C69E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0C42682-692C-4E81-8B6D-7ACDE8C69E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0C42682-692C-4E81-8B6D-7ACDE8C69E06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52163047-EC8B-4BAA-8061-9477C5FA3332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52163047-EC8B-4BAA-8061-9477C5FA3332}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52163047-EC8B-4BAA-8061-9477C5FA3332}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52163047-EC8B-4BAA-8061-9477C5FA3332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

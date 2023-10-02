@@ -18,6 +18,7 @@ namespace BSynchroRJP.Domain.Accounts
         [Required]
         [MaxLength(9)]
         public string AccountNumber { get; private set; }
+        public string AccountHolder { get; private set; }
         [Required]
         public decimal Balance { get; private set; }
         public DateTime? LastTransactionDate { get; private set; }
@@ -28,21 +29,24 @@ namespace BSynchroRJP.Domain.Accounts
 
         public virtual ICollection<Transaction> Transactions { get; private set; }
 
+        protected Account() { }
 
-        private Account(Guid id ,string accountNumber , decimal balance) : base (id)
+
+        private Account(Guid id ,string accountNumber , string accountHolder , decimal balance) : base (id)
         {
             this.Transactions = new List<Transaction>();
+            AccountHolder = accountHolder;
             AccountNumber = accountNumber;
             Balance = balance;
         }
 
 
-        public static Account Create(string accountNumber, decimal balance)
+        public static Account Create(string accountNumber, string accountHolder, decimal balance)
         {
             if (string.IsNullOrEmpty(accountNumber) || accountNumber.Length != 9)
                 throw new ArgumentException("Account Number Should be 9 char length");
 
-            return new Account(Guid.NewGuid(),accountNumber, balance);
+            return new Account(Guid.NewGuid(),accountNumber,accountHolder, balance);
         }
 
         public void AddTransaction(decimal amount)
